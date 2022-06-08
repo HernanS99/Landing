@@ -1,23 +1,20 @@
-body 
-{
+body {
     background-color: #212529;
 }
 
-#subnav{
+.subnav {
     color: #fff;
 }
-#blog 
-{
+
+.blog {
     background-color: #fff;
     color: #000;
     height: 900px;
     margin-top: 30px;
 }
 
-#caruimg
-{
-    
-    
+.undernav {
+    margin-top: 82px;
 }
 
 .footer-dark .item.social>a {
@@ -58,4 +55,69 @@ body
 .copyright-menu li {
     display: inline-block;
     padding-left: 0px;
+}
+
+#btnBonitoEnElcentro {
+
+    text-decoration: none;
+    margin-bottom: 30px;
+    background-color: var(--background-base, #212529);
+    color: var(--text-base, #000000);
+    border-radius: 400px;
+    padding: 2px 30px 15px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    --text-base: #46505A;
+}
+
+.footerimg {
+    margin-top: 10px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+
+.conciencia {
+    background-color: #46505a;
+    height: 670px;
+    padding-top: 40px;
+}
+
+@media (max-width: 1400px) {
+    .blog {
+        height: 600px;
+    }
+
+    .undernav {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .blog {
+        height: 1000px;
+    }
+
+    .conciencia {
+       
+        height: 1180px;
+        
+    }
+}
+
+@media (max-width: 778px) {
+    .blog {
+        height: 1800px;
+    }
+}
+
+@media (max-width: 450px) {
+    .blog {
+        height: 1200px;
+    }
+}
+
+@media (max-width: 420px) {
+    .blog {
+        height: 1150px;
+    }
 }
