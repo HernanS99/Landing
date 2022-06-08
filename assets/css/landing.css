@@ -1,5 +1,6 @@
 body {
     background-color: #212529;
+    
 }
 
 .subnav {
@@ -9,8 +10,9 @@ body {
 .blog {
     background-color: #fff;
     color: #000;
-    height: 900px;
     margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
 
 .undernav {
@@ -77,20 +79,20 @@ body {
 
 .conciencia {
     background-color: #46505a;
-    height: 670px;
+    
     padding-top: 40px;
+    padding-bottom: 100px;
 }
-
 @media (max-width: 1400px) {
-    .blog {
-        height: 600px;
-    }
+    
 
     .undernav {
         margin-top: 0;
     }
 
 }
+
+/* 
 
 @media (max-width: 1200px) {
     .blog {
@@ -120,4 +122,4 @@ body {
     .blog {
         height: 1150px;
     }
-}
+} */
