@@ -4,20 +4,21 @@ body {
 }
 
 .subnav {
-    color: #fff;
+    color: #fff; 
+    position: relative;
+    z-index: 2;
+    padding-bottom: 50px;
 }
 
 .blog {
-    background-color: #fff;
+    position: relative;
+    z-index:6;
     color: #000;
-    margin-top: 30px;
     padding-top: 40px;
     padding-bottom: 100px;
 }
 
-.undernav {
-    margin-top: 82px;
-}
+
 
 .footer-dark .item.social>a {
     font-size: 20px;
@@ -78,8 +79,6 @@ body {
 }
 
 .conciencia {
-    background-color: #46505a;
-    
     padding-top: 40px;
     padding-bottom: 100px;
 }
@@ -123,3 +122,4 @@ body {
         height: 1150px;
     }
 } */
+
