@@ -1,12 +1,11 @@
-
-
-
 .animation-area {
 	z-index: 1;
 	background: linear-gradient(to right, #159957, #155799);
 	width: 100%;
 	padding: 20px 0px 20px 0px;
+	max-width: 100%;
 }
+
 .box-area {
 	top: 0;
 	left: 0;
@@ -14,6 +13,7 @@
 	height: 100%;
 	overflow: hidden;
 }
+
 .box-area li {
 	position: absolute;
 	display: block;
@@ -24,32 +24,29 @@
 	animation: animate 20s linear infinite;
 	bottom: -150px;
 	border-radius: 50%;
+	/* rounded-circle */
 }
+
 .box-area li:nth-child(1) {
 	left: 86%;
 	width: 80px;
 	height: 80px;
 	animation-delay: 0s;
 }
+
 .box-area li:nth-child(2) {
 	left: 12%;
 	width: 30px;
 	height: 30px;
-	animation-delay: 1.5s;
+	animation-delay: 0s;
 	animation-duration: 10s;
 }
+
 .box-area li:nth-child(3) {
 	left: 70%;
 	width: 100px;
 	height: 100px;
-	animation-delay: 5.5s;
-}
-.box-area li:nth-child(4) {
-	left: 42%;
-	width: 150px;
-	height: 150px;
 	animation-delay: 0s;
-	animation-duration: 15s;
 }
 .box-area li:nth-child(5) {
 	left: 65%;
@@ -57,12 +54,14 @@
 	height: 40px;
 	animation-delay: 0s;
 }
+
 .box-area li:nth-child(6) {
 	left: 15%;
 	width: 110px;
 	height: 110px;
-	animation-delay: 3.5s;
+	animation-delay: 0s;
 }
+
 @keyframes animate {
 	0% {
 		transform: translateY(0) scale(0);
@@ -72,3 +71,48 @@
 		opacity: 0;
 	}
 }
+
+@media (max-width: 450px) {
+	.box-area li:nth-child(1) {
+		left: 10%;
+		width: 80px;
+		height: 80px;
+		animation-delay: 0s;
+		
+	}
+	.box-area li:nth-child(3) {
+		left: 55%;
+		width: 100px;
+		height: 100px;
+		animation-delay: 5.5s;
+	}
+}
+
+.gradient-custom-3 {
+
+    background: #84fab0;
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    background: #84fab0;
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+	.card 
+    {
+        background: none;
+        border: 0ch;
+        z-index: 1;
+		border-radius: 15px;
+    }
+
+	.navbar-brand
+	{
+		font-size: 23px;
+	}
+	
+	.margin footer 
+	{
+		margin-top: 30px;
+	}
