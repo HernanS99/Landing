@@ -108,6 +108,79 @@ h3{
     margin-bottom: 30px;
 }
 
+.input-group{
+    padding-bottom: 30px;
+    position: relative;
+}
+.input{
+    
+    font: inherit;
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    padding-block: 5px;
+    
+}
+.input::placeholder {
+    color: inherit;
+    transition: opacity .25s;
+}
+.input:focus::placeholder {
+    opacity: 0;
+}
 
+.title span {
+    --total: calc(var(--duration) + var(--delay));
+    position: relative;
+    display: block;
+    color: transparent;
+    overflow: hidden;
+    animation: revealText 1s var(--total) forwards;
+}
 
+.title span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: linear-gradient(to right, #159957, #14618E);
+    animation:
+        rollIn var(--duration) var(--delay) forwards,
+        rollOut var(--duration) var(--total) forwards;
+}
+
+.title span:nth-child(2)::after {
+    border-top: 3px solid #159957;
+}
+
+@keyframes revealText {
+    to {
+        color: #fff;
+    }
+}
+
+@keyframes rollIn {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes rollOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(105%);
+    }
+}
 
