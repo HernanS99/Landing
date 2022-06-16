@@ -36,6 +36,11 @@
                             <ul class="navbar-nav ms-auto md-3">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="register.html" tabindex="-1"
+                                        aria-disabled="true">Inicio</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="register.html" tabindex="-1"
                                         aria-disabled="true">Registrarse</a>
                                 </li>
                             </ul>
@@ -54,16 +59,20 @@
                 <div class="col-xl-4 mx-auto mt-3">
                     <div class="mb-3 undernav text-md-left">
                             <h1 class="title" style="--duration: 1s">
-                                <span style="--delay: .5s" >Harware.exe</span>
-                                <span style="--delay: .8s" class="fs-3">Tienda de hardware</span>
+                                <span style="--delay: .5s" class="display-2 " >Harware.exe</span>
+                                <span style="--delay: .8s" class="fs-3 fw-lighter">Tienda de hardware</span>
                             </h1>
                         <p class="fs-5">Todo tipo de hardware de computacion de alta gama para que armes tu computador
                             del sueño con los mejores precios del mercado
                         </p>
                         <p>Te ayudamos en el armado de tu pc</p>
-                        <label for="exampleFormControlInput1" class="form-label">Dejanos tu correo electronico aqui y te estaremos contactando</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                        <div class="form-outline mb-4 input-group">
+                            <input type="email" id="correo" class="form-control form-control-lg input" placeholder="Correo"/>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button"
+                                class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Enviar</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-8 mx-auto mt-3">
@@ -92,13 +101,13 @@
         <div class="container-fluid blog">
             <div class="row text-center">
                 <div class="col-md-4 mx-auto ">
-                    <h1 class="neonText">Catalogo</h1>
+                    <p class="neonText fs-1">Catalogo</p>
                 </div>
                 
             </div>
             <div class="row text-center">
                 <div class="col-md-4 mx-auto m-4">
-                    <h4>Tarjetas de video</h4>
+                    <h4 class="fw-bold">Tarjetas de video</h4>
                 </div>
             </div>
             <div class="row text-center m-4">
@@ -179,7 +188,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4 mx-auto m-4">
-                    <h4>Procesadores</h4>
+                    <h4 class="fw-bold">Procesadores</h4>
                 </div>
             </div>
             <div class="row text-center m-4">
@@ -247,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <p>AMD RYZEN 9</p>
+                    <p>AMD RYZEN 7</p>
                 </div>
             </div>
         </div>
