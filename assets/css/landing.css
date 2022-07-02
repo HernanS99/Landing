@@ -9,12 +9,13 @@ body {
     position: relative;
     z-index: 2;
     padding-bottom: 50px;
+    
 }
 
 .blog {
     position: relative;
     z-index:6;
-    
+    backdrop-filter: blur(12px);
 }
 a{
     text-decoration: none;
@@ -224,4 +225,7 @@ h3{
     background: transparent;
     }
 
+    .navbar{
+        backdrop-filter: blur(12px);
+    }
    
